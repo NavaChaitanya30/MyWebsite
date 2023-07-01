@@ -1,0 +1,117 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: white;
+  font-size: 16px;
+  color: rgb(13, 223, 13);
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 2px 5px rgba(203, 7, 7, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  position: relative;
+}
+
+nav ul li a {
+  display: block;
+  color: rgb(13, 223, 13);
+  text-decoration: none;
+  padding: 15px 20px;
+}
+
+nav ul li:hover {
+  background-color: rgba(13, 223, 13, 0.2);
+}
+
+nav ul li:hover > .sub-menu {
+  display: table;
+}
+
+nav ul .sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+nav ul .sub-menu table {
+  width: 100%;
+}
+
+nav ul .sub-menu td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+nav ul .sub-menu td a {
+  color: #333;
+  text-decoration: none;
+}
+
+main {
+  background-color: white;
+  color: black;
+  font-size: 15px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 0 80%;
+  overflow-y: auto;
+  margin-top: 10%;
+}
+
+footer {
+  background-color: #223b24;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  flex: 0 0 9%;
+  box-shadow: 0px 2px 5px rgba(203, 7, 7, 0.2);
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+}
+
+.user-profile img {
+  width: 50px;
+  height: 60px;
+  border-radius: 10%;
+  margin-right: 5px;
+}
+
+.about-me {
+  color: blue;
+}
+img{
+  cursor: pointer;
+}
