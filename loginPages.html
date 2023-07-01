@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Pages</title>
+  <link rel="stylesheet" type="text/css" href="style1.css">
+  <link rel="stylesheet" type="text/css" href="basicRegstyle.css">
+  <link rel="stylesheet" type="text/css" href="fbstyle.css">
+  <link rel="stylesheet" type="text/css" href="gstyle.css">
+  <style>
+    .login-section {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html" target="home">Home</a></li>
+        <li><a href="#basic-login">Basic Login Page</a></li>
+        <li><a href="#social-login">Social Media Login Integration</a></li>
+        <li><a href="#modal-login">Modal Login Form</a></li>
+      </ul>
+    </nav>
+    <div class="user-profile">
+      <img src="profile-picture.jpg" alt="User Profile Picture">
+    </div>
+  </header>
+  <h1>loginPages</h1>
+  <main>
+    <section class="about-me">
+      <h2>Login Pages</h2>
+      <p>
+        In my work on login pages, I have designed and developed various login page layouts and styles. I have implemented different authentication methods, such as username and password, social media login, and multi-factor authentication.
+      </p>
+      <p>
+        I focus on creating user-friendly and visually appealing login pages that provide a seamless login experience for users. I pay attention to details like form validation, error handling, and password strength indicators to enhance the security and usability of the login process.
+      </p>
+      <p>
+        Some of the login page projects I have worked on include:
+      </p>
+      <ul>
+        <li>
+          <a href="#basic-login">Project 1: Basic Login Page</a>
+          - This project involved designing a simple login page with a username and password input fields. Users can authenticate using their credentials.
+        </li>
+        <li>
+          <a href="#social-login">Project 2: Social Media Login Integration</a>
+          - This project integrated popular social media platforms like Facebook, Twitter, and Google into the login process. Users can choose to log in using their social media accounts.
+        </li>
+        <li>
+          <a href="#modal-login">Project 3: Modal Login Form</a>
+          - This project implemented a modal login form, which appears as a popup on the screen. Users can enter their login details without leaving the current page.
+        </li>
+      </ul>
+    </section>
+    <br><br>
+
+    
+  </main>
+  <section id="basic-login" class="login-section">
+    <h2>Basic Login Page</h2>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form>
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" required>
+    
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required>
+    
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+    
+          <label for="confirm-password">Confirm Password:</label>
+          <input type="password" id="confirm-password" name="confirm-password" required>
+    
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required>
+    
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required>
+    
+          <label for="address">Address:</label>
+          <textarea id="address" name="address" required></textarea>
+    
+          <input type="checkbox" id="terms" name="terms" required>
+          <label for="terms">I agree to the terms and conditions.</label>
+    
+          <input type="submit" value="Register">
+        </form>
+      </div>
+      <br>
+      <div class="container">
+        <h2>Login Form</h2>
+        <form>
+          <label for="login-email">Email Address:</label>
+          <input type="email" id="login-email" name="login-email" required>
+    
+          <label for="login-password">Password:</label>
+          <input type="password" id="login-password" name="login-password" required>
+    
+          <input type="checkbox" id="remember-me" name="remember-me">
+          <label for="remember-me">Remember me</label>
+    
+          <a href="#">Forgot Password?</a>
+    
+          <input type="submit" value="Login">
+        </form>
+      </div>
+  </section>
+
+  <section id="social-login" class="login-section">
+    <h2>Social Media Login Integration</h2>
+    <!-- Facebook -->
+    
+         
+    <br>      
+    <fb>
+    <div class="container">
+        <form id="loginForm" style="display: block;">
+            <h1>Facebook Login</h1>
+          <label for="email">Email or Phone:</label>
+          <input type="text" id="email" name="email" required>
+          
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+          
+          <input type="submit" value="Log In">
+        </form>
+      </div>
+    </fb>
+    <!--google-->
+    
+
+    
+      
+      <script src="https://accounts.google.com/gsi/client" async defer></script>
+      <br>
+      <g>
+      <div class="container">
+        <div class="google-logo">
+            <span class="google-letter-G">G</span>
+            <span class="google-letter-o1">o</span>
+            <span class="google-letter-o2">o</span>
+            <span class="google-letter-g">g</span>
+            <span class="google-letter-l">l</span>
+            <span class="google-letter-e">e</span>
+        </div>
+        <h3>Sign in with your Google Account</h3>
+        <form>
+          
+          <input type="text" id="email" name="email" placeholder="Email or phone" required>
+          
+          <button class="blue-button" >Next</button>
+        </form>
+      </div>
+      </g>
+      <br>
+
+
+
+      <!-- Twitter-->
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+      <script>
+        function twLogin() {
+          twttr.login(function (response) {
+            if (response.authResponse) {
+              // User is logged in and authorized
+              // Handle the response or make API calls here
+            } else {
+              // User cancelled login or did not authorize
+            }
+          });
+        }
+      </script>
+      
+      <a href="#" onclick="twLogin()">
+        <img src="https://abs.twimg.com/icons/apple-touch-icon-192x192.png" alt="Twitter Logo">
+      </a>
+      
+      
+            
+  </section>
+
+  <section id="modal-login" class="login-section">
+    <h2>Modal Login Form</h2>
+    <!-- Add your modal login form code here -->
+  </section>
+  <footer>
+    <p>&copy; 2023 Your Website. All rights reserved. @navachaitanya.kumbhagiri@gmail.com</p>
+  </footer>
+</body>
+</html>

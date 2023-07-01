@@ -1,0 +1,104 @@
+
+   
+
+    .container {
+      width: 300px;
+      
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+    }
+
+   g  h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #4285F4;
+      text-align: left;
+    }
+
+   g h3 {
+      font-size: 14px;
+      color: #757575;
+      text-align: left;
+      margin-top: 0;
+    }
+
+   g form {
+      margin-bottom: 20px;
+    }
+
+    g label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: #757575;
+    }
+
+    g input[type="text"] {
+      width: 100%;
+      padding: 10px 0;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    g input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #4285F4;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      color: #fff;
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+   g input[type="submit"]:hover {
+      background-color: #3367D6;
+    }
+    .blue-button {
+            cursor: pointer;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4285F4;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+        }
+        .google-logo {
+            font-size: 32px;
+            font-weight: bold;
+            color: #4285F4;
+            display: flex;
+            align-items: center;
+        }
+
+        .google-letter-G {
+            color: #4285F4;
+        }
+
+        .google-letter-o1 {
+            color: #EA4335;
+        }
+
+        .google-letter-o2 {
+            color:rgb(235, 174, 5);
+        }
+        .google-letter-g {
+    color: #4285F4;
+}
+
+.google-letter-l {
+    color: #34A853;
+}
+
+.google-letter-e {
+    color: #EA4335;
+}
+
+  
